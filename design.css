@@ -96,5 +96,33 @@ h3{
    border-bottom: 1px solid #e6e6e6;
     padding-bottom:50px;
     margin-bottom: 20px;
+}
+.images-wrapper{
+    display:flex;
+
+}
+.title{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.image-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap:20px;
+
+}
+.images-wrapper{
+    display: flex;
+    flex:1 0 auto;
+    width:55px;
+
+}
+.container.content{
+    display: flex;
+    flex-direction: column;
+    flex:0 1 auto;
 
 }
