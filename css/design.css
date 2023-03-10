@@ -125,8 +125,14 @@ h2 {
     column-gap: 20px;
 }
 
-.hero-images    {
+.hero-images {
     display: flex;
+    border: 9px solid #fff;
+    justify-content: center;
+    align-self: center;
+    border-radius: 999999px;
+    width: 100px;
+    height: 100px;
 }
 
 .hero-img-wrapper {
@@ -137,16 +143,6 @@ h2 {
     padding: 20px;
     color: white;
     font-family: "Anton", sans-serif;
-}
-
-.hero-images {
-    display: flex;
-    border: 9px solid #fff;
-    justify-content: center;
-    align-self: center;
-    border-radius: 999999px;
-    width: 100px;
-    height: 100px;
 }
 
 /* MAIN STYLING */
