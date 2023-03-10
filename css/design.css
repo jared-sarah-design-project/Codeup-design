@@ -269,6 +269,8 @@ main {
 .fa-solid.fa-bars{
     display: none;
 }
+
+
 /* large screens */
 @media screen and (max-width: 992px) {
     /***********  CONTAINERS SHOULD TAKE UP MORE OF THE VW  ***********/
