@@ -8,113 +8,202 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://kit.fontawesome.com/a470e83216.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/design.css">
     <title>Codeup Designs</title>
 </head>
 <body>
 <div class="page-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <header>
-                    <nav>
-                        <div class="logo-wrapper">
-                            <div class="img-wrapper">
-                                <img class=image src="img/logo.png" alt="logo">
-                            </div>
-                            <h2>codeup design</h2>
-                        </div>
-                        <div class="nav-elements">
-                            <p>SERVICES</p>
-                            <p>WORK</p>
-                            <p>BLOG</p>
-                            <p>CONTACT</p>
-                        </div>
-                    </nav>
-                </header>
-        <div class="row">
-            <div class="column">
-                <div class="hero-scene">
-                    <div class="hero-text">
-                        <h1>VISUAL DESIGN & WEB DEVELOPMENT</h1>
-                        <h3>FROM PARK CITY, UTAH</h3>
+    <header class="container">
+        <div class="row grow full-width no-padding">
+            <nav class="row no-padding justify-start full-width">
+
+                <div class="logo-name-wrapper">
+                    <div class="logo-wrapper">
+                        <img class="image" src="img/logo.png" alt="logo">
                     </div>
-                    <div class="fake-icon">
-                        <div class="hero-images red">
-                            <div class="hero-img-wrapper "> DESIGN</div>
+                    <h2>codeup design</h2>
+                </div>
+
+                <div class="nav-elements">
+                    <p>SERVICES</p>
+                    <p>WORK</p>
+                    <p>BLOG</p>
+                    <p>CONTACT</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="container hero-scene">
+        <div class="row grow hero-scene-row-wrapper">
+            <div class="column hero-scene-wrapper">
+
+                <div class="hero-text">
+                    <h1 class="anton">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+                    <h2 class="anton">FROM PARK CITY, UTAH</h2>
+                </div>
+
+                <div class="fake-icons">
+                    <div class="hero-images red">
+                        <div class="hero-img-wrapper "> DESIGN</div>
+                    </div>
+                    <div class="hero-images yellow">
+                        <div class="hero-img-wrapper "> DEVELOP</div>
+                    </div>
+                    <div class="hero-images green">
+                        <div class="hero-img-wrapper "> SUPPORT</div>
+                    </div>
+                    <div class="hero-images blue">
+                        <div class="hero-img-wrapper"> HOST</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <main class="container main-content-columns">
+        <div class="row main-content-row-wrapper grow full-width">
+            <div class="column main-column">
+                <div class="column-title-wrapper">
+                    <p>SELECTED WORK</p>
+                </div>
+                <div class="image-group"> <!--    row   -->
+                    <div class="column">
+                        <div class="large-img-wrapper">
+                            <img src="img/apple-ipad.jpg" alt="apples and a ipad">
                         </div>
-                        <div class="hero-images yellow">
-                            <div class="hero-img-wrapper "> DEVELOP</div>
+                        <div class="large-img-footer-wrapper">
+                            <p>Featured Project</p>
+                            <div class="sm-icons">
+                                <div class="sm-icons-wrapper red">
+                                    <div class="sm-img-wrapper ">D</div>
+                                </div>
+                                <div class="sm-icons-wrapper yellow">
+                                    <div class="sm-img-wrapper ">D</div>
+                                </div>
+                                <div class="sm-icons-wrapper green">
+                                    <div class="sm-img-wrapper ">S</div>
+                                </div>
+                                <div class="sm-icons-wrapper blue">
+                                    <div class="sm-img-wrapper">H</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="hero-images green">
-                            <div class="hero-img-wrapper "> SUPPORT</div>
+                    </div>
+                    <div class="column">
+                        <div class="large-img-wrapper">
+                            <img src="img/macbook.jpg" alt="apples and a ipad">
                         </div>
-                        <div class="hero-images blue">
-                            <div class="hero-img-wrapper"> HOST</div>
+                        <div class="large-img-footer-wrapper">
+                            <p>Featured Project</p>
+                            <div class="sm-icons">
+                                <div class="sm-icons-wrapper red">
+                                    <div class="sm-img-wrapper anton ">D</div>
+                                </div>
+                                <div class="sm-icons-wrapper yellow">
+                                    <div class="sm-img-wrapper anton ">D</div>
+                                </div>
+                                <div class="sm-icons-wrapper green">
+                                    <div class="sm-img-wrapper anton ">S</div>
+                                </div>
+                                <div class="sm-icons-wrapper blue">
+                                    <div class="sm-img-wrapper anton">H</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-group"> <!--    row   -->
+                    <div class="column">
+                        <div class="large-img-wrapper">
+                            <img src="img/man.jpg" alt="apples and a ipad">
+                        </div>
+                        <div class="large-img-footer-wrapper">
+                            <p>Featured Project</p>
+                            <div class="sm-icons">
+                                <div class="sm-icons-wrapper red">
+                                    <div class="sm-img-wrapper ">D</div>
+                                </div>
+                                <div class="sm-icons-wrapper yellow">
+                                    <div class="sm-img-wrapper ">D</div>
+                                </div>
+                                <div class="sm-icons-wrapper green">
+                                    <div class="sm-img-wrapper ">S</div>
+                                </div>
+                                <div class="sm-icons-wrapper blue">
+                                    <div class="sm-img-wrapper">H</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="large-img-wrapper">
+                            <img src="img/security.jpg" alt="apples and a ipad">
+                        </div>
+                        <div class="large-img-footer-wrapper">
+                            <p>Featured Project</p>
+                            <div class="sm-icons">
+                                <div class="sm-icons-wrapper red">
+                                    <div class="sm-img-wrapper ">D</div>
+                                </div>
+                                <div class="sm-icons-wrapper yellow">
+                                    <div class="sm-img-wrapper ">D</div>
+                                </div>
+                                <div class="sm-icons-wrapper green">
+                                    <div class="sm-img-wrapper ">S</div>
+                                </div>
+                                <div class="sm-icons-wrapper blue">
+                                    <div class="sm-img-wrapper">H</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="container content">
-        <div class="row">
-            <div class="column">
-                <section class="container">
-                    <div class="row">
-                        <div class="column title">
-                            <p>SELECTED WORK</p>
+            <div class="column secondary-column">
+                <div class="column-title-wrapper">
+                    <p>THE LAST</p>
+                </div>
+                <div class="articles-wrapper">
+                    <div class="article-wrapper">
+                        <div class="article-photo-wrapper">
+                            <img src="img/mobile-phone.jpg" alt="">
                         </div>
-                        <div class="image-group">
-                            <div class="column">
-                                <div class="images-wrapper">
-                                    <img src="img/apple-ipad.jpg" alt="apples and a ipad">
-                                 </div>
-                                    <p>Featured Project</p>
-                            </div>
-                            <div class="column">
-                                <div class="images-wrapper">
-                                    <img src="img/macbook.jpg" alt="macbook">
-                                 </div>
-                                    <p>Featured Project</p>
-                            </div>
-                        </div>
-                        <div class="image-group">
-                            <div class="column">
-                                <div class="images-wrapper">
-                                    <img src="img/man.jpg" alt="a man">
-                                 </div>
-                                    <p>Featured Project</p>
-                            </div>
-                            <div class="column">
-                                <div class="images-wrapper">
-                                    <img src="img/security.jpg" alt="the word security">
-                                </div>
-                                    <p>Featured Project</p>
-                            </div>
+                        <div class="article-text-wrapper">
+                            <h3>THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
                         </div>
                     </div>
-
-                        <div class="row">
-                            <div class="column">
-                                <div class="column title">
-                                    <p>SELECTED WORK</p>
-                                </div>
-                            </div>
+                    <div class="article-wrapper">
+                        <div class="article-photo-wrapper">
+                            <img src="img/head.jpg" alt="">
                         </div>
+                        <div class="article-text-wrapper">
+                            <h3>THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+                        </div>
+                    </div>
+                    <div class="article-wrapper">
+                        <div class="article-photo-wrapper">
+                            <img src="img/ipad.jpg" alt="">
+                        </div>
+                        <div class="article-text-wrapper">
+                            <h3>THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+                        </div>
+                    </div>
+                    <div class="article-wrapper">
+                        <h5>LAST TWEET</h5>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsam sequi sint! Aliquid asperiores beatae consequuntur est facilis libero quisquam, similique totam. Harum hic natus praesentium quo saepe sit temporibus?</P>
+                    </div>
+                </div>
 
-                </section>
             </div>
         </div>
-    </div>
+    </main>
 </div>
 <!--    ANTON FOR HEADERS   -->
 
 <!--    ABEL FOR REGULAR TEXT   -->
-
 
 <!--    XL & L SCREENS   -->
 <!--    HEADER   --> <!--    MIN-HEIGHT OF 105PX: PADDING OF 2-3PX   -->
@@ -144,9 +233,6 @@
 <!--    ONLY ONE COLUMN FOR BOTTOM PHOTOS   -->
 <!--    REMOVE BOTTOM BORDER FROM HERO SCENE   -->
 <!--    4 CIRCLE ICONS COLLAPSE INTO 2 ROWS EACH WITH 2 ICONS   -->
-
-
-
 
 <!-- SCRIPTS -->
 </body>
