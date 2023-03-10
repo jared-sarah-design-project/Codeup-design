@@ -64,12 +64,7 @@ nav img {
 }
 
 nav h2 {
-    /* font-size: 2.5rem; */
     font-weight: bold;
-}
-
-nav p {
-    /* font-size: 20px; */
 }
 
 .logo-name-wrapper {
@@ -142,7 +137,6 @@ h2 {
     margin: 20px;
     padding: 20px;
     color: white;
-
 }
 
 .hero-images {
@@ -354,6 +348,7 @@ main {
         position: absolute;
         right:25px;
     }
+
     nav{
         justify-content: space-between;
     }
@@ -373,7 +368,6 @@ main {
         display: flex;
         flex-wrap: wrap;
         max-width: 320px;
-
     }
 
     .secondary-column{
