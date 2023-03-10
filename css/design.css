@@ -26,11 +26,24 @@ body {
     font-family: "Anton", sans-serif;
 }
 
-section.container, main.container {
+.container {
+    max-width: 80vw;
+}
+
+.page-wrapper {
+    row-gap: 40px;
+}
+
+section, main {
+    max-width: 75vw;
+    width: 100%;
+    align-self: center;
     margin: 20px 0;
 }
 
 /* HEADER STYLING */
+
+
 nav {
     display: flex;
     flex-direction: row;
@@ -81,22 +94,15 @@ nav p {
 
 
 /* HERO SCENE STYLING */
-section.hero-scene {
-    /* max-width: 75vw; */
-}
 
 section.hero-scene.hero-scene-row-wrapper {
     flex: 0 1 75%;
+    padding: 40px;
 }
 
 .hero-scene-wrapper {
     justify-content: space-between;
     row-gap: 40px;
-}
-
-.hero-scene {
-    padding: 20px;
-    gap: 40px;
 }
 
 .hero-text {
@@ -153,16 +159,21 @@ h2 {
 
 /* MAIN STYLING */
 
-main.container.grow.main-content-columns {
-    border-top: 5px solid black;
-    padding: 40px;
+main {
+    max-width: 80vw;
+}
+
+.main-content-row-wrapper {
+    border-top: 1px solid #C8C9CA;
+    column-gap: 5%;
+    padding-top: 20px;
 }
 
 .main-column {
     flex: 2;
     align-items: center;
     justify-content: space-between;
-    row-gap: 40px;
+    row-gap: 15px;
 }
 
 .column-title-wrapper {
@@ -192,12 +203,10 @@ main.container.grow.main-content-columns {
 
 .sm-icons {
     display: flex;
-
-}
-
-.images-wrapper {
-    display: flex;
-    align-items: center;
+    max-width: 100%;
+    justify-content: space-between;
+    column-gap: 10px;
+    font-family: "Anton", sans-serif;
 }
 
 .title {
@@ -229,23 +238,36 @@ main.container.grow.main-content-columns {
 
 .secondary-column  {
     flex: 1;
-    row-gap: 40px;
+    row-gap: 15px;
 }
 
 .articles-wrapper {
     display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: start;
+    row-gap: 20px;
+}
+
+.article-wrapper {
+    display: flex;
     column-gap: 20px;
+}
+
+.article-wrapper:last-of-type {
+    display: flex;
+    flex-direction: column;
 }
 
 .article-photo-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    object-fit: cover;
 }
 
 .article-photo-wrapper img {
-    max-height: 100%;
-    max-width: 100%;
+    height: 80px;
+    width: 100%;
+    object-fit: cover;
     border: 3px solid var(--dark-grey);
     border-radius: 10px;
 }
@@ -254,4 +276,22 @@ main.container.grow.main-content-columns {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Anton", sans-serif;
 }
+
+
+/* large screens */
+@media screen and (max-width: 992px) {
+    /***********  CONTAINERS SHOULD TAKE UP MORE OF THE VW  ***********/
+}
+
+/* medium screens */
+@media screen and (max-width: 768px) {
+
+}
+
+/* extra-small and small screens */
+@media screen and (max-width: 576px) {
+
+}
+
