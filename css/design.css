@@ -316,6 +316,11 @@ main {
     border: 8px solid var(--dark-grey);
 }
 
+.large-img-wrapper img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
 .large-img-footer-wrapper {
     display: flex;
     justify-content: space-between;
