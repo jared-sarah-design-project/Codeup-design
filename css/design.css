@@ -160,7 +160,6 @@ nav button, .hidden-menu button {
 /***********  HIDDEN MENU STYLING  ***********/
 
 .hidden-menu {
-    display: none;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -177,17 +176,17 @@ nav button, .hidden-menu button {
     transition:  all ease-in 0.5s;
 }
 
+.hidden-menu.show-menu {
+    right: -2%;
+    background-color: var(--dark-grey);
+}
+
 #close {
     display: none;
     position: absolute;
     background: transparent;
     top: 2px;
     left: 2px;
-}
-
-.hidden-menu.show-menu {
-    right: -2%;
-    background-color: var(--dark-grey);
 }
 
 .hidden-menu .hidden-company-name {
