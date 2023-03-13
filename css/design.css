@@ -133,21 +133,29 @@ nav button, .hidden-menu button {
 
 #overlay {
     position: fixed;
-    display: none;
+    display: block;
+    background-color: var(--bg-color);
+    opacity: 0;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    /* z-index: 2; */
+    pointer-events: none;
     transition: all ease-in 0.5s;
 }
 
 #overlay.show-menu {
-    display: none;
-    background-color: rgba(255,255,255,0.8);
+    pointer-events: all;
+    opacity: .8;
 }
+
+/***********  use the opacity property to add a transition instead of display property.   ***********/
+/***********  set opacity to 0 and pointer-events: none; when hiding content  ***********/
+/***********  set opacity to .8 and pointer-events: all; when showing  ***********/
+/*********** pointer-events: none;  ***********/
+/***********  pointer-events: all;  ***********/
 
 /***********  HIDDEN MENU STYLING  ***********/
 
