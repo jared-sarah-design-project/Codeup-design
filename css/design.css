@@ -439,7 +439,6 @@ main {
         display: none;
     }
 
-}
 
     nav{
         justify-content: space-between;
@@ -448,6 +447,7 @@ main {
     .secondary-column{
         display: none;
     }
+}
 
 
 /***********  SMALL AND X-SMALL SCREENS  ***********/

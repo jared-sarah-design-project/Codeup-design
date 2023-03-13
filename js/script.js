@@ -17,4 +17,3 @@ close.addEventListener('click', () => {
     overlay.classList.remove('show-menu')
 })
 
-// remove the show-menu class from hidden-menu when the screen is resized to more than or equal to 992px
