@@ -262,7 +262,6 @@ h2 {
     height: 100px;
 }
 
-<<<<<<< HEAD
 .hero-img-wrapper {
     justify-content: center;
     align-self: center;
@@ -273,10 +272,7 @@ h2 {
     font-family: "Anton", sans-serif;
 }
 
-/* MAIN STYLING */
-=======
 /***********  MAIN STYLING  ***********/
->>>>>>> jared-orler
 
 main {
     max-width: 80vw;
@@ -402,18 +398,10 @@ main {
     justify-content: center;
     font-family: "Anton", sans-serif;
 }
-<<<<<<< HEAD
-.fa-solid.fa-bars{
-    display: none;
-}
-
-
-/* large screens */
-=======
 
 /***********  MEDIA QUERIES  ***********/
 /***********  LARGE AND X-LARGE SCREENS  ***********/
->>>>>>> jared-orler
+
 @media screen and (max-width: 992px) {
     main {
         max-width: 90vw;
