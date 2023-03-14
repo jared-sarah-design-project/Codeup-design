@@ -15,6 +15,8 @@
 </head>
 <body>
 <div class="page-wrapper">
+    <div id="overlay">
+    </div>
     <header class="container">
         <div class="row grow full-width no-padding">
             <nav class="row no-padding justify-start full-width">
@@ -24,18 +26,35 @@
                     </div>
                     <h2 class="company-name">codeup design</h2>
                 </div>
-                <div class="icon-wrapper">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
                 <div class="nav-elements">
                     <p>SERVICES</p>
                     <p>WORK</p>
                     <p>BLOG</p>
                     <p>CONTACT</p>
                 </div>
+                <button id="open" class="nav-menu-toggle"><i class="fa-solid fa-bars fa-lg"></i></button>
+                <!--<button id="close" class="nav-menu-toggle"><i class="fa-sharp fa-xmark fa-lg"></i></button>-->
+                <!--<div class="icon-wrapper">-->
+                <!--    <i class="fa-solid fa-bars"></i>-->
+                <!--</div>-->
             </nav>
         </div>
     </header>
+
+    <div class="hidden-menu">
+        <button id="close"><i class="fa-sharp fa-xmark fa-lg"></i></button>
+        
+        <div class="hidden-company-name">
+            <h2>codeup design</h2>
+        </div>
+        <div class="hidden-nav-elements">
+            <p>SERVICE</p>
+            <p>WORK</p>
+            <p>BLOG</p>
+            <p>CONTACT</p>
+        </div>
+    </div>
+
     <section class="container hero-scene">
         <div class="row grow full-width hero-scene-row-wrapper">
             <div class="column hero-scene-wrapper">
@@ -181,7 +200,7 @@
                             <img src="img/head.jpg" alt="polygon head">
                         </div>
                         <div class="article-text-wrapper">
-                            <h3>THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+                                <h3>NIBBLER AWESOME WEBSITE TESTING</h3>
                         </div>
                     </div>
                     <div class="article-wrapper">
@@ -189,7 +208,7 @@
                             <img src="img/ipad.jpg" alt="ipad">
                         </div>
                         <div class="article-text-wrapper">
-                            <h3>THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+                            <h3>HOW TO GET GOOGLE TO LIKE YOU</h3>
                         </div>
                     </div>
                     <div class="article-wrapper">
@@ -200,8 +219,10 @@
             </div>
         </div>
     </main>
+
 </div>
 
 <!-- SCRIPTS -->
+<script src="js/script.js"></script>
 </body>
 </html>
