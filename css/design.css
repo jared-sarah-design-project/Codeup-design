@@ -28,7 +28,10 @@ body {
 
 
 .page-wrapper {
+    position: relative;
+    width: 100%;
     row-gap: 40px;
+    overflow-x: hidden;
 }
 
 section, main {
@@ -39,7 +42,6 @@ section, main {
 }
 
 /* HEADER STYLING */
-
 
 nav {
     display: flex;
@@ -84,8 +86,133 @@ nav h2 {
     padding: 12px 0 10px 0;
 }
 
+/* .nav-menu-toggle { */
+/*     display: flex; */
+/*     height:30px; */
+/*     width:35px; */
+/*     padding: 20px 25px; */
+/*     border-radius: 5px; */
+/*     border:2px solid var(--dark-grey); */
+/*     justify-content: center; */
+/*     align-items: center; */
+/*     position: absolute; */
+/*     top: 15px; */
+/*     right:25px; */
+/*     transition: all ease-in 0.5s; */
+/* } */
 
-/* HERO SCENE STYLING */
+.nav-menu-toggle:first-child {
+    display: none;
+}
+
+.nav-menu-toggle:last-child {
+    display: none;
+}
+
+nav button, .hidden-menu button {
+    display: flex;
+    height:30px;
+    width:35px;
+    padding: 20px 25px;
+    border-radius: 5px;
+    border:2px solid var(--dark-grey);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right:25px;
+    transition: all ease-in 0.5s;
+}
+
+#open {
+    display: none;
+}
+
+
+/***********  OVERLAY STYLING  ***********/
+
+#overlay {
+    position: fixed;
+    display: block;
+    background-color: var(--bg-color);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    transition: all ease-in 0.5s;
+}
+
+#overlay.show-menu {
+    pointer-events: all;
+    opacity: .8;
+}
+
+/***********  use the opacity property to add a transition instead of display property.   ***********/
+/***********  set opacity to 0 and pointer-events: none; when hiding content  ***********/
+/***********  set opacity to .8 and pointer-events: all; when showing  ***********/
+/*********** pointer-events: none;  ***********/
+/***********  pointer-events: all;  ***********/
+
+/***********  HIDDEN MENU STYLING  ***********/
+
+.hidden-menu {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 20px;
+    position: absolute;
+    right: -70%;
+    top: 10%;
+    height: 50vh;
+    width: 30vw;
+    padding: 30px;
+    background-color: var(--bg-color);
+    border: 3px solid var(--dark-grey);
+    border-radius: 10px;
+    transition:  all ease-in 0.5s;
+}
+
+.hidden-menu.show-menu {
+    right: -2%;
+    background-color: var(--dark-grey);
+}
+
+#close {
+    display: none;
+    position: absolute;
+    background: transparent;
+    top: 2px;
+    left: 2px;
+}
+
+.hidden-menu .hidden-company-name {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    width: 80%;
+    border-bottom: 2px solid black;
+}
+
+.hidden-menu .hidden-company-name h2 {
+    width: 100%;
+}
+
+.hidden-menu .hidden-nav-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    padding: 20px;
+    width: 40%;
+    row-gap: 20px;
+}
+
+/***********  HERO SCENE STYLING  ***********/
 
 section.hero-scene.hero-scene-row-wrapper {
     flex: 0 1 75%;
@@ -135,6 +262,7 @@ h2 {
     height: 100px;
 }
 
+<<<<<<< HEAD
 .hero-img-wrapper {
     justify-content: center;
     align-self: center;
@@ -146,6 +274,9 @@ h2 {
 }
 
 /* MAIN STYLING */
+=======
+/***********  MAIN STYLING  ***********/
+>>>>>>> jared-orler
 
 main {
     max-width: 80vw;
@@ -182,6 +313,11 @@ main {
     height: 100%;
     width: 100%;
     border: 8px solid var(--dark-grey);
+}
+
+.large-img-wrapper img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
 }
 
 .large-img-footer-wrapper {
@@ -266,57 +402,76 @@ main {
     justify-content: center;
     font-family: "Anton", sans-serif;
 }
+<<<<<<< HEAD
 .fa-solid.fa-bars{
     display: none;
 }
 
 
 /* large screens */
+=======
+
+/***********  MEDIA QUERIES  ***********/
+/***********  LARGE AND X-LARGE SCREENS  ***********/
+>>>>>>> jared-orler
 @media screen and (max-width: 992px) {
-    /***********  CONTAINERS SHOULD TAKE UP MORE OF THE VW  ***********/
     main {
         max-width: 90vw;
     }
+
 }
 
-/* medium screens */
+/***********  MEDIUM SCREENS  ***********/
 @media screen and (max-width: 768px) {
     main {
         max-width: 100vw;
     }
+
     .nav-elements{
         display: none;
     }
+
+    .hidden-menu.show-menu {
+        display: flex;
+    }
+
+    #overlay.show-menu {
+        display: block;
+        background-color: rgba(255,255,255,0.8);
+    }
+
+    #open {
+        display: flex;
+    }
+
+    #open.show-menu {
+        display: none;
+    }
+
+    #close {
+        display: none;
+    }
+
+    #close.show-menu {
+        display: flex;
+    }
+
     .company-name{
         display: none;
     }
-    .fa-solid.fa-bars{
-        display: flex;
-        justify-content: center;
-        align-self:center;
-        padding: 5px;
 
-    }
-    .icon-wrapper{
-        height:30px;
-        width:35px;
-        border-radius: 5px;
-        border:2px solid var(--dark-grey);
-        justify-content: center;
-        align-content: end;
-        position: absolute;
-        right:25px;
-    }
+
     nav{
         justify-content: space-between;
     }
+
     .secondary-column{
         display: none;
     }
-
 }
 
-/* extra-small and small screens */
+
+/***********  SMALL AND X-SMALL SCREENS  ***********/
 @media screen and (max-width: 576px) {
     main {
         max-width: 100vw;
@@ -329,27 +484,23 @@ main {
     .company-name{
         display: none;
     }
-    .fa-solid.fa-bars{
-        display: flex;
-        justify-content: center;
-        align-self:center;
-        padding: 5px;
-
-    }
-    .icon-wrapper{
-        height:30px;
-        width:35px;
-        border-radius: 5px;
-        border:2px solid var(--dark-grey);
-        justify-content: center;
-        align-content: end;
-        position: absolute;
-        right:25px;
-    }
 
     nav{
         justify-content: space-between;
     }
+
+    #open {
+        display: flex;
+    }
+
+    #close {
+        display: flex;
+    }
+
+    .hidden-menu {
+        width: 50vw;
+    }
+
     .hero-text{
         display: flex;
         flex: 0 1 auto;
